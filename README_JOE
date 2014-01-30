@@ -17,3 +17,13 @@ gives a .json file
 See : http://bl.ocks.org/mbostock/4062045
 
 http://networkx.lanl.gov/reference/readwrite.json_graph.html
+
+
+import json_graph
+
+
+from networkx.readwrite import  json_graph
+
+graph = json_graph.load(open(filename))
+
+
