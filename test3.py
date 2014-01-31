@@ -8,13 +8,14 @@ rawnodelist = coinlist.read()
 nodelist = JS.loads(rawnodelist)
 
 def getidlist():
-    global idlist
     idlist = []
     for i in range(len(nodelist)):
         idlist.append(nodelist[i]['id'])
+    return idlist
 
-getidlist()
 
-print idlist
+ids = getidlist()
+
+print ids
 
 
